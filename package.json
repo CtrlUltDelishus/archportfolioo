@@ -14,7 +14,7 @@
   },
   "keywords": [],
   "author": "HarrisK.",
-  "homepage": "git@github.com:CtrlUltDelishus/archportfolio.io.git"
+  "homepage": "git@github.com:CtrlUltDelishus/archportfolio.io.git",
   "license": "MIT",
   "dependencies": {
     "@chakra-ui/icons": "^2.0.15",

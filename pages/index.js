@@ -4,29 +4,20 @@ import {
   Container,
   Heading,
   Box,
-  SimpleGrid,
   Button,
   List,
   ListItem,
   useColorModeValue,
   chakra,
 } from '@chakra-ui/react'
-import { ChevronRightIcon, EmailIcon } from '@chakra-ui/icons'
+import { ChevronRightIcon, } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
-import { IoLogoChrome, IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5'
+import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5'
 import Image from 'next/image'
-import sign from '/public/images/sign.png'
-import { WorkGridItem } from '../components/grid-item'
-import { WorkImage } from '../components/work'
 
-
-const SignatureImage = chakra(Image, {
-  shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
-});
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)

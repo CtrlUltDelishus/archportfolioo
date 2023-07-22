@@ -5,19 +5,16 @@ import {
   Link,
   List,
   ListItem,
-  UnorderedList,
   Heading,
-  Center,
   Button,
   Flex,
   SimpleGrid
 } from '@chakra-ui/react'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import Layout from '../../components/layouts/article'
 import { ChevronRightIcon } from '@chakra-ui/icons';
-import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { HStack,} from '@chakra-ui/react'
 
 
 const ArtPDF = () => {
@@ -73,7 +70,7 @@ const Work = () => (
 </Box>
 
 <Box mb={4}>
-  <P>Overall, the +7 level offers a library for study and research, a cafe with an outdoor area providing a panoramic view of the project, an administration office with the boss's office, meeting rooms, and toilet facilities.</P>
+  <P>Overall, the +7 level offers a library for study and research, a cafe with an outdoor area providing a panoramic view of the project, an administration office with the boss&apos;s office, meeting rooms, and toilet facilities.</P>
 </Box>
 
 <Box mb={4}>
@@ -91,7 +88,7 @@ const Work = () => (
   </Box>
 
 <Box mb={4}>
-  <P>Adjacent to the workshops, there are toilet facilities for convenience. At the end of the outdoor hall, there is a kids' entertainment room, providing a designated space for children to engage in creative activities and play.</P>
+  <P>Adjacent to the workshops, there are toilet facilities for convenience. At the end of the outdoor hall, there is a kids entertainment room, providing a designated space for children to engage in creative activities and play.</P>
   </Box>
 
 <Box mb={4}>

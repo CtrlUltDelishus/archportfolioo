@@ -5,7 +5,7 @@ import { Container, Flex, Heading, SimpleGrid, Divider, Box, Button } from '@cha
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import { Stack, HStack, VStack } from '@chakra-ui/react'
+import { HStack } from '@chakra-ui/react'
 
 import Th_Kiosk from '/public/images/projects/kiosk/kioskthumb.png'
 import Th_School from '/public/images/projects/school/Th_School.png'

@@ -4,15 +4,12 @@ import {
   Link,
   List,
   ListItem,
-  AspectRatio,
   Box,
   Button
 } from '@chakra-ui/react';
-import { ExternalLinkIcon } from '@chakra-ui/icons';
 import { Title, WorkImage, Meta } from '../../components/work';
 import P from '../../components/paragraph';
 import Layout from '../../components/layouts/article';
-import NextLink from 'next/link';
 import { ChevronRightIcon } from '@chakra-ui/icons';
 
 const KioskPdf = () => {
@@ -40,12 +37,12 @@ const Work = () => (
       </Title>
       <Box mb={4}>
   <P>
-    This is a small 'Kiosk' - Mall. It's located in the center of Xanthi, next to the Bazaar of Xanthi specifically.
+    This is a small &apos;Kiosk&apos; - Mall. It&apos;s located in the center of Xanthi, next to the Bazaar of Xanthi specifically.
   </P>
 </Box>
 <Box mb={4}>
   <P>
-    Our idea was to 'bring' the Local Bazaar inside our Mall, where people will be able to set up their stands and shops.
+    Our idea was to &apos;bring&apos; the Local Bazaar inside our Mall, where people will be able to set up their stands and shops.
     The northern part of the building consists of the Citizen Service Center, and right next to it, an Info center, in which you can learn different aspects of culture, architecture, and history of Xanthi, as well as a stage for events next to it.
   </P>
 </Box>

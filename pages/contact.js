@@ -2,8 +2,8 @@ import { Container, List, ListItem, Link, Button, Heading, Box } from '@chakra-u
 import Layout from '../components/layouts/article';
 import EmailForm from '../components/EmailForm';
 import Section from '../components/section';
-import { IoIosAt, IoLogoTwitter, IoLogoInstagram, IoLogoGithub, IoLogoLinkedin, IoLogoFacebook, IoLogoAmazon, IoLogoYahoo, IoLogoNpm, IoLogoChrome } from 'react-icons/io5';
-import ReCAPTCHA from 'react-google-recaptcha';
+import { IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook, IoLogoChrome } from 'react-icons/io5';
+
 const Contact = () => (
   <Layout title="Contact">
 

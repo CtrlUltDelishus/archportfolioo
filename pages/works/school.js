@@ -5,14 +5,10 @@ import {
   List,
   ListItem,
   SimpleGrid,
-  UnorderedList,
-  Heading,
-  Center,
   Box,
   Button,
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
-import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import { ChevronRightIcon } from '@chakra-ui/icons';
@@ -41,7 +37,7 @@ const Work = () => (
       </Title>
       <Box mb={4}>
   <P>
-    This is an "Open'' Primary School located in Xanthi, its land is located next to the river Kosynthos and the school is designed 'around' it as each building has its own view of it.
+    This is an &apos;Open&apos; Primary School located in Xanthi, its land is located next to the river Kosynthos and the school is designed &apos;around&apos; it as each building has its own view of it.
   </P>
 </Box>
 <Box mb={4}>
@@ -51,12 +47,12 @@ const Work = () => (
 </Box>
 <Box mb={4}>
   <P>
-    Under them, there's an open restaurant which can be used by the neighborhood and hold events for parents, etc.
+    Under them, there&apos;s an open restaurant which can be used by the neighborhood and hold events for parents, etc.
   </P>
 </Box>
 <Box mb={4}>
   <P>
-    The School also has a Multiple Use Building, 2 ''Special'' Classes (Arts and Environments Class), and a shelter for Gymnastics. An interesting quality of the school is the small 'Tower' which can be used as a 'shortcut' from the classes to the main school yard.
+    The School also has a Multiple Use Building, 2 &apos;Special&apos; Classes (Arts and Environments Class), and a shelter for Gymnastics. An interesting quality of the school is the small &apos;Tower&apos; which can be used as a &apos;shortcut&apos; from the classes to the main school yard.
   </P>
 </Box>
 <Box mb={4}>
