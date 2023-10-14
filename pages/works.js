@@ -6,6 +6,17 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { HStack } from '@chakra-ui/react'
 
+import Thumb_Kiosk from 'https://drive.google.com/uc?export=download&id=1cSD_HDv2pj1xBqy049lA6J-eJhp6-7bA';
+import Th_School from '/public/images/projects/school/Th_School.png'
+import Th_Arts from '/public/images/projects/arts/Th_Arts.jpg'
+import Th_Work1 from '/public/images/projects/restoration1/Th_Work1.png'
+import Th_Work2 from '/public/images/projects/restoration2/Th_Work2.png'
+import Th_Work_3 from '/public/images/projects/restoration3/Th_Work_3.png'
+import thu_comp from '/public/images/projects/comp1/thu_comp.jpg'
+import Th_Work_4 from '/public/images/projects/work4/th_work_4.jpg'
+import Th_Work_5 from '/public/images/projects/work5/Th_Work5.jpg'
+import Th_Work_6 from '/public/images/projects/work6/Th_Work6.jpg'
+
 
 const downloadPdf = () => {
   const pdfUrl = '/pdfs/HK.pdf';
@@ -48,11 +59,7 @@ const Works = () => (
           <WorkGridItem 
           id="kiosk" 
           title="Kiosk/Mall in the Centre Of Xanthi" 
-          thumbnail="https://drive.google.com/uc?id=1cSD_HDv2pj1xBqy049lA6J-eJhp6-7bA"
-          alt= "Kiosk"
-          width={5000}
-          height={4500}
-          >
+          thumbnail={Thumb_Kiosk}>
           2022, 3rd Year Project, 5th Semester, DuTh/
           </WorkGridItem>
         </Section>

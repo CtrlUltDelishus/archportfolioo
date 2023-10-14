@@ -4,6 +4,7 @@ import emailjs from 'emailjs-com';
 
 const EmailForm = () => {
   const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [successMessage, setSuccessMessage] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
@@ -12,8 +13,15 @@ const EmailForm = () => {
     e.preventDefault();
 
     try {
-      await emailjs.send('service_69', 'template_69', { name: name, message: message, from_name: name }, 'fVuz1FmuTVJkyV-OB');
+      const response = await emailjs.send('service_69', 'template_69', {
+        from_name: name,
+        message: message,
+        email: email, // You can include the email address here if needed
+      }, 'fVuz1FmuTVJkyV-OB');
+      console.log('Email send response:', response);
+
       setName('');
+      setEmail('');
       setMessage('');
       setSuccessMessage('Email sent successfully!');
       setErrorMessage('');
@@ -31,6 +39,17 @@ const EmailForm = () => {
         <Input
           value={name}
           onChange={(e) => setName(e.target.value)}
+          isResizable={false}
+          required
+        />
+      </FormControl>
+
+      <FormControl id="email" mb={4}>
+        <FormLabel>Email</FormLabel>
+        <Input
+          type="email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           isResizable={false}
           required
         />
