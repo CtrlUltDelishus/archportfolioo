@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Box, Link, Button, FormControl, FormLabel, Input, Textarea } from '@chakra-ui/react';
+import { Box, Link,} from '@chakra-ui/react';
 
 
 const Footer = () => {

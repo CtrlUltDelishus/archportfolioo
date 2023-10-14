@@ -10,14 +10,13 @@ import {
   useColorModeValue,
   chakra,
 } from '@chakra-ui/react'
-import { ChevronRightIcon, } from '@chakra-ui/icons'
+import { ChevronRightIcon } from '@chakra-ui/icons'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5'
 import Image from 'next/image'
-
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: prop => ['width', 'height', 'src', 'alt'].includes(prop)
@@ -34,8 +33,8 @@ const Home = () => (
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus! 
-        P.S Profile picture will change 
+        Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus!
+        P.S Profile picture will change
       </Box>
 
       <Box display={{ md: 'flex' }}>
@@ -44,24 +43,7 @@ const Home = () => (
             Harris Kountouresis
           </Heading>
           <p>Architecture Student</p>
-
-{/*     
-              <Box align="left">
-                  <SignatureImage
-                       src="/images/sign.png"
-                       alt="Signature"
-                       width="150"
-                       height="100"
-                       mt={2}/>
-               </Box>
-MAYBE SIGNATURE
-
-*/}
-        
-
         </Box>
-        
-
 
         <Box
           flexShrink={0}
@@ -95,28 +77,37 @@ MAYBE SIGNATURE
           Work
         </Heading>
 
-        <Box mb={4}>    
-        <Paragraph> I am an architecture student with extensive knowledge in various design programs, 
-including AutoCAD, Sketchup, Lumion, Photoshop, and ArchiCAD. With a diploma in AutoCAD, 
-I have honed my technical skills to produce accurate and precise drawings. </Paragraph>
-</Box>
+        <Box mb={4}>
+          <Paragraph>
+            I am an architecture student with extensive knowledge in various design programs,
+            including AutoCAD, Sketchup, Lumion, Photoshop, and ArchiCAD. With a diploma in AutoCAD,
+            I have honed my technical skills to produce accurate and precise drawings.
+          </Paragraph>
+        </Box>
 
-<Box mb={4}>
-<Paragraph> I am passionate about creating innovative and sustainable designs that enhance the built environment. 
-I have experience working on a range of projects, from residential to commercial (university projects), as well as freelance works, and I am always eager to take on new challenges.</Paragraph>
-</Box>
+        <Box mb={4}>
+          <Paragraph>
+            I am passionate about creating innovative and sustainable designs that enhance the built environment.
+            I have experience working on a range of projects, from residential to commercial (university projects),
+            as well as freelance works, and I am always eager to take on new challenges.
+          </Paragraph>
+        </Box>
 
-<Box mb={4}>
-<Paragraph>Thanks to my expertise in design programs, I am able to bring my ideas to life with 3D visualizations that capture the essence of my designs. 
-I believe that good design should not only be functional but also aesthetically pleasing, and I always strive to achieve both in every project I works on.</Paragraph>
-</Box>
+        <Box mb={4}>
+          <Paragraph>
+            Thanks to my expertise in design programs, I am able to bring my ideas to life with 3D visualizations
+            that capture the essence of my designs. I believe that good design should not only be functional but
+            also aesthetically pleasing, and I always strive to achieve both in every project I work on.
+          </Paragraph>
+        </Box>
         <Box align="center" my={4}>
           <Button
             as={NextLink}
             href="/works"
             scroll={false}
             rightIcon={<ChevronRightIcon />}
-            colorScheme="teal">
+            colorScheme="teal"
+          >
             My portfolio
           </Button>
         </Box>
@@ -153,18 +144,17 @@ I believe that good design should not only be functional but also aesthetically 
 
         <BioSection>
           <BioYear>2019</BioYear>
-          Have went through a mandatory 14-month army service in the National Cypriot Army.
+          Have gone through a mandatory 14-month army service in the National Cypriot Army.
         </BioSection>
 
         <BioSection>
           <BioYear>2022 to present</BioYear>
-          Doing Freelance Architectural Study and 3D Visualisation for an office in Greece, Limnos, namely, P&V PANTELAROUDIS CH. & VASILEIOU AN.
+          Doing Freelance Architectural Study and 3D Visualization for an office in Greece, Limnos, namely, P&V PANTELAROUDIS CH. & VASILEIOU AN.
         </BioSection>
-
 
         <BioSection>
           <BioYear>2023 to present</BioYear>
-          Studying as a 5th year student in the Architecture Department of DuTh/
+          Studying as a 5th-year student in the Architecture Department of DuTh/
         </BioSection>
       </Section>
 
@@ -173,7 +163,10 @@ I believe that good design should not only be functional but also aesthetically 
           I ♥
         </Heading>
         <Paragraph>
-        I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can't convey.
+          I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity
+          and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity.
+          Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes
+          can't convey.
         </Paragraph>
       </Section>
 
@@ -182,21 +175,19 @@ I believe that good design should not only be functional but also aesthetically 
           On the web
         </Heading>
         <List>
-          
-
-        <ListItem>
-            <Link href='https://www.gmail.com/' target= "_blank">
+          <ListItem>
+            <Link href='https://www.gmail.com/' target="_blank">
               <Button
-               variant='ghost'
-               colorScheme="teal"
-               leftIcon={<IoLogoChrome/>}
-               >
+                variant='ghost'
+                colorScheme="teal"
+                leftIcon={<IoLogoChrome />}
+              >
                 Harris.k1452@gmail.com
-               </Button>
-            </Link>   
-        </ListItem>
+              </Button>
+            </Link>
+          </ListItem>
 
-        <ListItem>
+          <ListItem>
             <Link href="https://www.linkedin.com/in/harris-k-1077a1227/" target="_blank">
               <Button
                 variant="ghost"
@@ -230,11 +221,9 @@ I believe that good design should not only be functional but also aesthetically 
             </Link>
           </ListItem>
         </List>
-
       </Section>
     </Container>
   </Layout>
 )
 
 export default Home
-export { getServerSideProps } from '../components/chakra'

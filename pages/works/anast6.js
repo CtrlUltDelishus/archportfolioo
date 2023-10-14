@@ -11,7 +11,7 @@ import {
 import Layout from '../../components/layouts/article'
 import { Title, WorkImage, Meta } from '../../components/work'
 import Paragraph from '../../components/paragraph'
-import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5'
+import { IoLogoFacebook } from 'react-icons/io5'
 
 const Work = () => (
   <Layout title="Tourist Apt Complex @ Limnos">

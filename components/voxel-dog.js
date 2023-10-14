@@ -1,7 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { loadGLTFModel } from '../lib/model'
 import { DogSpinner, DogContainer } from './voxel-dog-loader'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { useRef } from 'react'
