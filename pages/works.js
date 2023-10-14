@@ -6,7 +6,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 import { HStack } from '@chakra-ui/react'
 
-import Thumb_Kiosk from 'https://drive.google.com/uc?export=download&id=1cSD_HDv2pj1xBqy049lA6J-eJhp6-7bA';
+import Thumb_Kiosk from '/public/images/projects/kiosk/kioskthumb.png';
 import Th_School from '/public/images/projects/school/Th_School.png'
 import Th_Arts from '/public/images/projects/arts/Th_Arts.jpg'
 import Th_Work1 from '/public/images/projects/restoration1/Th_Work1.png'
