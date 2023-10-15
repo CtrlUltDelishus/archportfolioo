@@ -139,12 +139,12 @@ const Home = () => (
 
         <BioSection>
           <BioYear>2019</BioYear>
-          Started studying in the Architecture Department of DuTh/ (Undergraduate+Master Integrated Diploma).
+          Have gone through a mandatory 14-month army service in the National Cypriot Army.
         </BioSection>
 
         <BioSection>
           <BioYear>2019</BioYear>
-          Have gone through a mandatory 14-month army service in the National Cypriot Army.
+          Started studying in the Architecture Department of DuTh/ (Undergraduate+Master Integrated Diploma).
         </BioSection>
 
         <BioSection>
