@@ -138,7 +138,7 @@ const Home = () => (
         </BioSection>
 
         <BioSection>
-          <BioYear>2019</BioYear>
+          <BioYear>2018</BioYear>
           Have gone through a mandatory 14-month army service in the National Cypriot Army.
         </BioSection>
 
