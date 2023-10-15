@@ -91,11 +91,12 @@ const Work = () => (
             <Box align="center" my={4}>
         <KioskPdf />
       </Box>
-      <WorkImage src="https://drive.google.com/uc?id=15AtvsFHS9htX5Leu4pr0rff85HTb_3br" />
-      <WorkImage src="https://drive.google.com/uc?id=1tqxBeMftbyQ4H6uktrYXpqxUmzq8QxEi" />
-      <WorkImage src="https://drive.google.com/uc?id=14mGB0nJzknGn9Pyk2vjqmzFMKQJCN7ma" />
-      <WorkImage src="https://drive.google.com/uc?id=1EBBy4M4MpQpacSHzMhCiuCM_0aAmp_6l" />
-      <WorkImage src="https://drive.google.com/uc?id=18fooAaqFNrkOdzsyRaU3tNFzmPwWflWt" />
+
+      <WorkImage src="https://drive.google.com/uc?id=15AtvsFHS9htX5Leu4pr0rff85HTb_3br" loading='lazy' />
+      <WorkImage src="https://drive.google.com/uc?id=1tqxBeMftbyQ4H6uktrYXpqxUmzq8QxEi"loading='lazy' />
+      <WorkImage src="https://drive.google.com/uc?id=14mGB0nJzknGn9Pyk2vjqmzFMKQJCN7ma"loading='lazy' />
+      <WorkImage src="https://drive.google.com/uc?id=1EBBy4M4MpQpacSHzMhCiuCM_0aAmp_6l"loading='lazy' />
+      <WorkImage src="https://drive.google.com/uc?id=18fooAaqFNrkOdzsyRaU3tNFzmPwWflWt" loading='lazy' />
 
     </Container>
   </Layout>
