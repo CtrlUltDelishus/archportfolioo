@@ -65,7 +65,7 @@ const Work = () => (
         </ListItem>
       </List>
 
-<WorkImage src="https://drive.google.com/uc?id=1xVKgjAlKJCI6LdoC-Qi5IhOE-B6q2eRJ"/>
+<WorkImage src="https://drive.google.com/uc?id=1xVKgjAlKJCI6LdoC-Qi5IhOE-B6q2eRJ" loading="lazy"/>
 
 
 <WorkImage src="https://drive.google.com/uc?id=1Inp5A07DQBu_czGFA6HH5VHlkQn-Ca_6"/>
