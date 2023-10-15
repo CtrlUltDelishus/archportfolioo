@@ -43,9 +43,8 @@ const Works = () => (
             colorScheme="teal"
             onClick={downloadPdf}
             width="100%" // Make the button take up the entire width
-            style={{ fontSize: 'calc(10px + 1vw)' }} // Scale the font size based on viewport width
             >
-            Complete Portfolio in PDF Format **in progress**
+            Complete Portfolio in PDF Format 
           </Button>
         </Box>
       </Section>
