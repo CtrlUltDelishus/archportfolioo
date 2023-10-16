@@ -159,7 +159,7 @@ const Home = () => {
             I ♥
           </Heading>
           <Paragraph>
-            I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can't convey.
+            I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can&apos;t convey.
           </Paragraph>
         </Section>
 
