@@ -17,7 +17,7 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5';
 import Image from 'next/image';
-import { createConfetti } from '../components/confetti.js'; // Make sure the path is correct
+import { createConfetti } from '../components/confetti.js';
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
