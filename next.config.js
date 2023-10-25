@@ -1,4 +1,4 @@
 module.exports = {
-  swcMinify: true,
-  assetPrefix: "."
+  reactStrictMode: false,
+  swcMinify: true
 }
