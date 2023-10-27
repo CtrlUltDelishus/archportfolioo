@@ -35,7 +35,7 @@ const Home = () => {
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
         >
-          Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus! P.S Profile picture will change
+          Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus!
         </Box>
 
         <Box display={{ md: 'flex' }}>

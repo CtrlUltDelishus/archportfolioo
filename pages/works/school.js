@@ -82,7 +82,6 @@ const Work = () => (
       <Box align="center" my={4}>
         <SchoolPdf/>
       </Box>
-
 <WorkImage src="https://drive.google.com/uc?id=15URI-fZVHTEcyr9wAzTi2uyOrvLwmDqF" />
 <WorkImage src="https://drive.google.com/uc?id=191FENZEfBl2iz43u7CHnLV7J8OjhpfM_" />
 <WorkImage src="https://drive.google.com/uc?id=16Mu6vBXVrfMcDp403lCKvwSmlyKzOidP" />
