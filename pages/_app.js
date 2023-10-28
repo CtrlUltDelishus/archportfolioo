@@ -5,6 +5,7 @@ import Chakra from '../components/chakra'
 import '../pages/works/stylesheet.css'
 import { Analytics } from '@vercel/analytics/react';
 
+
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
 }

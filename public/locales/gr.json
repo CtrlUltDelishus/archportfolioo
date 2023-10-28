@@ -7,9 +7,9 @@
             "Work": "Δουλειά"
         },
         "nav": {
-            "Works": "Works",
-            "posts": "Posts",
-            "Contact": "Contact"
+            "works": "Δουλειά",
+            "posts": "Αναρτήσεις",
+            "contact": "Επικοινωνία"
         }
     }
 }

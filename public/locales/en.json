@@ -1,0 +1,15 @@
+{
+    "en": {
+        "index": {
+            "greeting": "Hello, I'm Harris, an architecture student based in Greece & Cyprus!",
+            "name": "Harris Kountouresis",
+            "architecturestudent": "Architecture Undergraduate",
+            "Work": "Work"
+        },
+        "nav": {
+            "works": "Works",
+            "posts": "Posts",
+            "contact": "Contact"
+      }
+  }
+}

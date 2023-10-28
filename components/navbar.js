@@ -18,7 +18,6 @@ import {
 } from '@chakra-ui/react';
 import { HamburgerIcon } from '@chakra-ui/icons';
 import ThemeToggleButton from './theme-toggle-button';
-import { useTranslation } from 'next-i18next';
 import 'flag-icons/css/flag-icons.min.css';
 import { Icon } from '@iconify/react';
 import ukFlag from '@iconify/icons-flag/gb-4x3';
@@ -49,11 +48,6 @@ const MenuLink = React.forwardRef((props, ref) => (
 
 const Navbar = (props) => {
   const { path } = props;
-  const { t, i18n } = useTranslation('nav');
-
-  const changeLanguage = (language) => {
-    i18n.changeLanguage(language);
-  };
 
   return (
     <Box
@@ -71,7 +65,7 @@ const Navbar = (props) => {
         maxW="container.md"
         wrap="wrap"
         align="center"
-        justify="space-between"
+        justify="space between"
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
@@ -88,27 +82,19 @@ const Navbar = (props) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            {t('works')}
+            Works
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            {t('posts')}
+            Posts
           </LinkItem>
           <Stack direction="row" alignItems="center">
             <LinkItem href="/contact" path={path}>
-              {t('contact')}
+              Contact
             </LinkItem>
-            <Button
-              onClick={() => changeLanguage('en')}
-              variant="link"
-              color={i18n.language === 'en' ? 'primary.500' : undefined}
-            >
+            <Button variant="link">
               <Icon icon={ukFlag} width="1.5em" height="1.5em" />
             </Button>
-            <Button
-              onClick={() => changeLanguage('gr')}
-              variant="link"
-              color={i18n.language === 'gr' ? 'primary.500' : undefined}
-            >
+            <Button variant="link">
               <Icon icon={grFlag} width="1.8em" height="1.8em" />
             </Button>
           </Stack>
@@ -130,31 +116,21 @@ const Navbar = (props) => {
                   HarrisK.
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  {t('nav.works')}
+                  Works
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
-                  {t('nav.posts')}
+                  Posts
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/contact">
-                  {t('nav.contact')}
+                  Contact
                 </MenuItem>
-
-                <MenuItem as={MenuLink} href="">
-                  <Button
-                    onClick={() => changeLanguage('en')}
-                    variant="link"
-                    color={i18n.language === 'en' ? 'primary.500' : undefined}
-                  >
+                <MenuItem>
+                  <Button variant="link">
                     <Icon icon={ukFlag} width="1.5em" height="1.5em" />
                   </Button>
                 </MenuItem>
-
-                <MenuItem href="">
-                  <Button
-                    onClick={() => changeLanguage('gr')}
-                    variant="link"
-                    color={i18n.language === 'gr' ? 'primary.500' : undefined}
-                  >
+                <MenuItem>
+                  <Button variant="link">
                     <Icon icon={grFlag} width="1.8em" height="1.8em" />
                   </Button>
                 </MenuItem>

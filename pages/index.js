@@ -18,7 +18,6 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5';
 import NotableSkills from '../components/NotableSkills';
-import { useTranslation } from 'react-i18next';
 
 
 
@@ -27,7 +26,7 @@ const ProfileImage = chakra(Image, {
 });
 
 const Home = () => {
-  const { t } = useTranslation('index');
+  
   return (
     <Layout>
       <Container>
@@ -40,16 +39,17 @@ const Home = () => {
           css={{ backdropFilter: 'blur(10px)' }}
 
         >
-  {t('greeting')}
+       Hello, I'm Harris, an architecture student based in Greece & Cyprus!
+
         </Box>
 
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-            {t('name')}
+            Harris Kountouresis
             </Heading>
-            <p>{t('index.architecturestudent')}</p>
+            <p>Architecture Undergraduate</p>
           </Box>
 
           <Box
@@ -81,7 +81,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            {t('index.Work')}
+            Work
           </Heading>
 
           <Box mb={4}>
