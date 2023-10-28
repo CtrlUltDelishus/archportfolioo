@@ -39,7 +39,7 @@ const Home = () => {
           css={{ backdropFilter: 'blur(10px)' }}
 
         >
-       Hello, I'm Harris, an architecture student based in Greece & Cyprus!
+       Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus!
 
         </Box>
 
