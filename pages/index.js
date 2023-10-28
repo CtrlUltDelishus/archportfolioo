@@ -95,11 +95,7 @@ const Home = () => {
               Thanks to my expertise in design programs, I am able to bring my ideas to life with 3D visualizations that capture the essence of my designs. I believe that good design should not only be functional but also aesthetically pleasing, and I always strive to achieve both in every project I work on.
             </Paragraph>
           </Box>
-
-          <section>
-            <NotableSkills/>
-          </section>
-
+          
           <Box align="center" my={4} id="confetti-container">
             <Button
               as={NextLink}
@@ -111,6 +107,10 @@ const Home = () => {
               My portfolio
             </Button>
           </Box>
+          <section>
+            <NotableSkills/>
+          </section>
+
         </Section>
 
         <Section delay={0.2}>
