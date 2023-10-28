@@ -24,8 +24,6 @@ import { Icon } from '@iconify/react';
 import ukFlag from '@iconify/icons-flag/gb-4x3';
 import grFlag from '@iconify/icons-emojione-v1/flag-for-greece';
 
-
-
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href;
   const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
@@ -51,7 +49,7 @@ const MenuLink = React.forwardRef((props, ref) => (
 
 const Navbar = (props) => {
   const { path } = props;
-  const { t, i18n } = useTranslation();
+  const { t, i18n } = useTranslation('nav');
 
   const changeLanguage = (language) => {
     i18n.changeLanguage(language);
@@ -90,14 +88,14 @@ const Navbar = (props) => {
           mt={{ base: 4, md: 0 }}
         >
           <LinkItem href="/works" path={path}>
-            Works
+            {t('works')}
           </LinkItem>
           <LinkItem href="/posts" path={path}>
-            Posts
+            {t('posts')}
           </LinkItem>
           <Stack direction="row" alignItems="center">
             <LinkItem href="/contact" path={path}>
-              Contact
+              {t('contact')}
             </LinkItem>
             <Button
               onClick={() => changeLanguage('en')}
@@ -132,39 +130,34 @@ const Navbar = (props) => {
                   HarrisK.
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/works">
-                  Works
+                  {t('nav.works')}
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/posts">
-                  Posts
+                  {t('nav.posts')}
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/contact">
-                  Contact
+                  {t('nav.contact')}
                 </MenuItem>
 
                 <MenuItem as={MenuLink} href="">
-                
-                <Button
-              onClick={() => changeLanguage('en')}
-              variant="link"
-              color={i18n.language === 'en' ? 'primary.500' : undefined}
-            >
-              <Icon icon={ukFlag} width="1.5em" height="1.5em" />
-            </Button>
-
+                  <Button
+                    onClick={() => changeLanguage('en')}
+                    variant="link"
+                    color={i18n.language === 'en' ? 'primary.500' : undefined}
+                  >
+                    <Icon icon={ukFlag} width="1.5em" height="1.5em" />
+                  </Button>
                 </MenuItem>
 
                 <MenuItem href="">
-
-                <Button
-              onClick={() => changeLanguage('gr')}
-              variant="link"
-              color={i18n.language === 'gr' ? 'primary.500' : undefined}
-            >
-              <Icon icon={grFlag} width="1.8em" height="1.8em" />
-            </Button>
-
-               </MenuItem>
-
+                  <Button
+                    onClick={() => changeLanguage('gr')}
+                    variant="link"
+                    color={i18n.language === 'gr' ? 'primary.500' : undefined}
+                  >
+                    <Icon icon={grFlag} width="1.8em" height="1.8em" />
+                  </Button>
+                </MenuItem>
               </MenuList>
             </Menu>
           </Box>

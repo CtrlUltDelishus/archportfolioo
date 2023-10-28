@@ -27,7 +27,7 @@ const ProfileImage = chakra(Image, {
 });
 
 const Home = () => {
-  const { t } = useTranslation();
+  const { t } = useTranslation('index');
   return (
     <Layout>
       <Container>
@@ -49,7 +49,7 @@ const Home = () => {
             <Heading as="h2" variant="page-title">
             {t('name')}
             </Heading>
-            <p>{t('architecturestudent')}</p>
+            <p>{t('index.architecturestudent')}</p>
           </Box>
 
           <Box
@@ -81,7 +81,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            {t('Work')}
+            {t('index.Work')}
           </Heading>
 
           <Box mb={4}>

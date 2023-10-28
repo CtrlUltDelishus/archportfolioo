@@ -4,9 +4,6 @@ import { AnimatePresence } from 'framer-motion'
 import Chakra from '../components/chakra'
 import '../pages/works/stylesheet.css'
 import { Analytics } from '@vercel/analytics/react';
-import { appWithTranslation } from 'next-i18next';
-import i18n from '../components/i18n';
-
 
 if (typeof window !== 'undefined') {
   window.history.scrollRestoration = 'manual'
