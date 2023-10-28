@@ -18,12 +18,16 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5';
 import NotableSkills from '../components/NotableSkills';
+import { useTranslation } from 'react-i18next';
+
+
 
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ['width', 'height', 'src', 'alt'].includes(prop),
 });
 
 const Home = () => {
+  const { t } = useTranslation();
   return (
     <Layout>
       <Container>
@@ -34,16 +38,18 @@ const Home = () => {
           textAlign="center"
           bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
           css={{ backdropFilter: 'blur(10px)' }}
+
         >
-          Hello, I&apos;m Harris, an architecture student based in Greece & Cyprus!
+  {t('greeting')}
         </Box>
+
 
         <Box display={{ md: 'flex' }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
-              Harris Kountouresis
+            {t('name')}
             </Heading>
-            <p>Architecture Student</p>
+            <p>{t('architecturestudent')}</p>
           </Box>
 
           <Box
@@ -75,12 +81,12 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            {t('Work')}
           </Heading>
 
           <Box mb={4}>
             <Paragraph>
-              I am an architecture student with extensive knowledge in various design programs, including AutoCAD, Sketchup, Lumion, Photoshop, and ArchiCAD. With a diploma in AutoCAD, I have honed my technical skills to produce accurate and precise drawings.
+            I am an architecture student with extensive knowledge in various design programs, including AutoCAD, Sketchup, Lumion, Photoshop, and ArchiCAD. With a diploma in AutoCAD, I have honed my technical skills to produce accurate and precise drawings.
             </Paragraph>
           </Box>
 

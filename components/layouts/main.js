@@ -22,8 +22,8 @@ const Main = ({ children, router }) => {
         <link rel="shortcut icon" href="/icon.png" type="image/x-icon" />
         <meta name="twitter:title" content="HarrisK." />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content="@craftzdog" />
-        <meta name="twitter:creator" content="@craftzdog" />
+        <meta name="twitter:site" content="HarrisK" />
+        <meta name="twitter:creator" content="HarrisK" />
         <meta name="twitter:image" content="" />
         <meta property="og:site_name" content="HarrisK." />
         <meta name="og:title" content="HarrisK." />

@@ -1,6 +1,6 @@
-import { forwardRef } from 'react'
-import Logo from './logo'
-import NextLink from 'next/link'
+import React from 'react';
+import Logo from './logo';
+import NextLink from 'next/link';
 import {
   Container,
   Box,
@@ -13,14 +13,22 @@ import {
   MenuList,
   MenuButton,
   IconButton,
-  useColorModeValue
-} from '@chakra-ui/react'
-import { HamburgerIcon } from '@chakra-ui/icons'
-import ThemeToggleButton from './theme-toggle-button'
+  useColorModeValue,
+  Button,
+} from '@chakra-ui/react';
+import { HamburgerIcon } from '@chakra-ui/icons';
+import ThemeToggleButton from './theme-toggle-button';
+import { useTranslation } from 'next-i18next';
+import 'flag-icons/css/flag-icons.min.css';
+import { Icon } from '@iconify/react';
+import ukFlag from '@iconify/icons-flag/gb-4x3';
+import grFlag from '@iconify/icons-emojione-v1/flag-for-greece';
+
+
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
-  const active = path === href
-  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900')
+  const active = path === href;
+  const inactiveColor = useColorModeValue('gray.800', 'whiteAlpha.900');
   return (
     <Link
       as={NextLink}
@@ -34,15 +42,20 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     >
       {children}
     </Link>
-  )
-}
+  );
+};
 
-const MenuLink = forwardRef((props, ref) => (
+const MenuLink = React.forwardRef((props, ref) => (
   <Link ref={ref} as={NextLink} {...props} />
-))
+));
 
-const Navbar = props => {
-  const { path } = props
+const Navbar = (props) => {
+  const { path } = props;
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    i18n.changeLanguage(language);
+  };
 
   return (
     <Box
@@ -82,9 +95,25 @@ const Navbar = props => {
           <LinkItem href="/posts" path={path}>
             Posts
           </LinkItem>
-           <LinkItem href="/contact" path={path}>
-            Contact
-          </LinkItem>
+          <Stack direction="row" alignItems="center">
+            <LinkItem href="/contact" path={path}>
+              Contact
+            </LinkItem>
+            <Button
+              onClick={() => changeLanguage('en')}
+              variant="link"
+              color={i18n.language === 'en' ? 'primary.500' : undefined}
+            >
+              <Icon icon={ukFlag} width="1.5em" height="1.5em" />
+            </Button>
+            <Button
+              onClick={() => changeLanguage('gr')}
+              variant="link"
+              color={i18n.language === 'gr' ? 'primary.500' : undefined}
+            >
+              <Icon icon={grFlag} width="1.8em" height="1.8em" />
+            </Button>
+          </Stack>
         </Stack>
 
         <Box flex={1} align="right">
@@ -111,13 +140,38 @@ const Navbar = props => {
                 <MenuItem as={MenuLink} href="/contact">
                   Contact
                 </MenuItem>
+
+                <MenuItem as={MenuLink} href="">
+                
+                <Button
+              onClick={() => changeLanguage('en')}
+              variant="link"
+              color={i18n.language === 'en' ? 'primary.500' : undefined}
+            >
+              <Icon icon={ukFlag} width="1.5em" height="1.5em" />
+            </Button>
+
+                </MenuItem>
+
+                <MenuItem href="">
+
+                <Button
+              onClick={() => changeLanguage('gr')}
+              variant="link"
+              color={i18n.language === 'gr' ? 'primary.500' : undefined}
+            >
+              <Icon icon={grFlag} width="1.8em" height="1.8em" />
+            </Button>
+
+               </MenuItem>
+
               </MenuList>
             </Menu>
           </Box>
         </Box>
       </Container>
     </Box>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

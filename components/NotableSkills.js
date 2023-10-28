@@ -15,6 +15,7 @@ const NotableSkills = () => {
     { skill: 'ArchiCAD 26', proficiency: 50 },
     { skill: 'Rhino 7', proficiency: 40 },
     { skill: 'Blender', proficiency: 50 },
+    { skill: 'Web Development', proficiency: 40 },
 
   ];
 
