@@ -92,7 +92,7 @@ const Home = () => {
 
           <Box mb={4}>
             <Paragraph>
-              TEEEEEST I am passionate about creating innovative and sustainable designs that enhance the built environment. I have experience working on a range of projects, from residential to commercial (university projects), as well as freelance works, and I am always eager to take on new challenges.
+              I am passionate about creating innovative and sustainable designs that enhance the built environment. I have experience working on a range of projects, from residential to commercial (university projects), as well as freelance works, and I am always eager to take on new challenges.
             </Paragraph>
           </Box>
 
