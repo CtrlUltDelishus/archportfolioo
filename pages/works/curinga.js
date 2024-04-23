@@ -21,7 +21,7 @@ import {
         </Box>
         
         <Box mb={4}>
-            <Paragraph>Arranged in a wedge-shaped pattern around the monument, the white-colored rods, made of recycled frosted acrylic, vary in height and cross-section, mimicking the monument's facades and creating a mysterious atmosphere that invites exploration. The arrangement provides shade in summer and shelter from wind in winter, while the varying heights and cross-sections evoke the impression of a naturally placed forest, guiding visitors along a path towards the monument's core.</Paragraph>
+            <Paragraph>Arranged in a wedge-shaped pattern around the monument, the white-colored rods, made of recycled frosted acrylic, vary in height and cross-section, mimicking the monument&apos;s facades and creating a mysterious atmosphere that invites exploration. The arrangement provides shade in summer and shelter from wind in winter, while the varying heights and cross-sections evoke the impression of a naturally placed forest, guiding visitors along a path towards the monument&apos;s core.</Paragraph>
         </Box>
 
         <List ml={4} my={4}>
