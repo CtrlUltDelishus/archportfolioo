@@ -7,7 +7,7 @@ import {
     Box,
   } from '@chakra-ui/react'
   import Layout from '../../components/layouts/article'
-  import { Title, WorkImage, Meta } from '../../components/work'
+  import { Title, Meta } from '../../components/work'
   import Paragraph from '../../components/paragraph'
   
   const Work = () => (
