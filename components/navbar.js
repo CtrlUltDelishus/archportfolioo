@@ -130,7 +130,7 @@ const Navbar = (props) => {
                   Posts
                 </MenuItem>
                 <MenuItem as={MenuLink} href="/contact">
-                  Contact
+                  Contacty
                 </MenuItem>
                 <MenuItem>
                   <Button
