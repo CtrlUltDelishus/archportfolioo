@@ -16,7 +16,7 @@ import thu_comp from '/public/images/projects/comp1/thu_comp.jpg'
 import Th_Work_4 from '/public/images/projects/work4/th_work_4.jpg'
 import Th_Work_5 from '/public/images/projects/work5/Th_Work5.jpg'
 import Th_Work_6 from '/public/images/projects/work6/Th_Work6.jpg'
-
+import Th_Cur from '/public/images/projects/thu_cur.jpg'
 
 const downloadPdf = () => {
   const pdfUrl = '/pdfs/HK.pdf';
@@ -165,11 +165,19 @@ Tourist Apartment Complex and Architectural Study in Limnos Island #1
       </Section>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
+
         <Section delay={0.5}>
           <WorkGridItem id="comp1" 
           thumbnail={thu_comp} 
           title="Monument Installation in Athens /Competition">
           Monument installation on the theme of the 1974 invasion in Cyprus.
+          </WorkGridItem>
+        </Section>
+        <Section delay={0.5}>
+          <WorkGridItem id="curinga" 
+          thumbnail={Th_Cur} 
+          title="ReUse Italy - ReUse the Thermae">
+          An Architecture Competition about re-using old thermae ruins.
           </WorkGridItem>
         </Section>
 
