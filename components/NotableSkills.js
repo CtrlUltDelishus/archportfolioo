@@ -22,7 +22,7 @@ const NotableSkills = () => {
   return (
     <div>
       <Heading as="h3" variant="section-title">
-        Notable Skills..
+        Notable Skills
       </Heading>
       <Box mb={4}>
         <UnorderedList>
