@@ -113,7 +113,7 @@ const Home = () => {
       colorScheme="teal"
       width="65%"
     >
-      My portfolio
+      My Works
     </Button>
   </Box>
 
