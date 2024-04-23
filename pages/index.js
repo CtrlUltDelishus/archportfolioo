@@ -63,8 +63,8 @@ const Home = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              w="220px"
-              h="220px"
+              w="150px"
+              h="150px"
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
@@ -73,8 +73,8 @@ const Home = () => {
                 src="/images/takuya.jpg"
                 alt="Profile image"
                 borderRadius="full"
-                width="220"
-                height="220"
+                width="150"
+                height="150"
               />
             </Box>
           </Box>
@@ -82,7 +82,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            About Me..
+            About Me
           </Heading>
 
           <Box mb={4}>
@@ -113,7 +113,7 @@ const Home = () => {
       colorScheme="teal"
       width="65%"
     >
-      My portfolio..
+      My portfolio
     </Button>
   </Box>
 
@@ -126,7 +126,7 @@ const Home = () => {
       colorScheme="teal"
       width="70%"
     >
-      My CV..
+      My CV
     </Button>
   </Box>
 </Flex>
@@ -186,10 +186,13 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥..
+            I ♥
           </Heading>
           <Paragraph>
-            I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can&apos;t convey.
+            I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. 
+          </Paragraph>
+          <Paragraph>
+          Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can&apos;t convey.
           </Paragraph>
         </Section>
 

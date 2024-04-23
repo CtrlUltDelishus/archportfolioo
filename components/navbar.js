@@ -11,7 +11,6 @@ import {
   IconButton,
   useColorModeValue,
   Button,
-  Slide,
   Menu,
   MenuButton,
   MenuList,
