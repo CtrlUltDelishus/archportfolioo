@@ -18,6 +18,7 @@ import Layout from '../components/layouts/article';
 import Section from '../components/section';
 import { IoLogoChrome, IoLogoInstagram, IoLogoLinkedin, IoLogoFacebook } from 'react-icons/io5';
 import NotableSkills from '../components/NotableSkills';
+import { Flex } from '@chakra-ui/react';
 
 
 
@@ -62,8 +63,8 @@ const Home = () => {
               borderColor="whiteAlpha.800"
               borderWidth={2}
               borderStyle="solid"
-              w="100px"
-              h="100px"
+              w="220px"
+              h="220px"
               display="inline-block"
               borderRadius="full"
               overflow="hidden"
@@ -72,8 +73,8 @@ const Home = () => {
                 src="/images/takuya.jpg"
                 alt="Profile image"
                 borderRadius="full"
-                width="100"
-                height="100"
+                width="220"
+                height="220"
               />
             </Box>
           </Box>
@@ -81,7 +82,7 @@ const Home = () => {
 
         <Section delay={0.1}>
           <Heading as="h3" variant="section-title">
-            Work
+            About Me..
           </Heading>
 
           <Box mb={4}>
@@ -102,17 +103,36 @@ const Home = () => {
             </Paragraph>
           </Box>
           
-          <Box align="center" my={4} id="confetti-container">
-            <Button
-              as={NextLink}
-              href="/works"
-              scroll={false}
-              rightIcon={<ChevronRightIcon />}
-              colorScheme="teal"
-            >
-              My portfolio
-            </Button>
-          </Box>
+<Flex justify="space-between" spacing={4}>
+  <Box align="left" my={4} id="confetti-container" flexGrow={1}>
+    <Button
+      as={NextLink}
+      href="/works"
+      scroll={false}
+      rightIcon={<ChevronRightIcon />}
+      colorScheme="teal"
+      width="65%"
+    >
+      My portfolio..
+    </Button>
+  </Box>
+
+  <Box align="right" my={4} id="confetti-container" flexGrow={1}>
+    <Button
+      as={NextLink}
+      href="/404"
+      scroll={false}
+      rightIcon={<ChevronRightIcon />}
+      colorScheme="teal"
+      width="70%"
+    >
+      My CV..
+    </Button>
+  </Box>
+</Flex>
+
+
+
           <section>
             <NotableSkills/>
           </section>
@@ -121,7 +141,7 @@ const Home = () => {
 
         <Section delay={0.2}>
           <Heading as="h3" variant="section-title">
-            Bio
+            Bio..
           </Heading>
           <BioSection>
             <BioYear>2000</BioYear>
@@ -166,7 +186,7 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            I ♥
+            I ♥..
           </Heading>
           <Paragraph>
             I find inspiration in various forms of creativity. Sketching and painting ignite my imagination, fostering creativity and attention to detail. Video games are my realm for strategic thinking, problem-solving, and boundless creativity. Through photography, I capture stories and moments from a distinct perspective, sharing narratives that words sometimes can&apos;t convey.
@@ -175,7 +195,7 @@ const Home = () => {
 
         <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
-            On the web
+            On the web..
           </Heading>
           <List>
             <ListItem>
